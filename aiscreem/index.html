@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+    <div class="aiscreem">
+      <div class="body">
+        <div id="eye-container">
+          <div id="left-eye" class="eye"></div>
+          <div id="right-eye" class="eye"></div>
+        </div>
+        <div id="mouth-container">
+          <div id="mouth"></div>
+        </div>
+      </div>
+      <div class="wood"></div>
+    </div>
+
+    <h1 id="range-count">+30 <sup> o </sup> C</h1>
+
+    <input
+      type="range"
+      min="-30"
+      max="30"
+      value="-30"
+      class="slider"
+      id="range"
+      oninput="setRange()"
+    />
+    <h3 id="freez">FREEZ ME</h3>
+
+    <script src="index.js"></script>
+  </body>
+</html>

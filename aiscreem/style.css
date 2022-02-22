@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #5894f0;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  
+  #background {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1c40f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .aiscreem {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotateY(25deg);
+            transform: rotateY(25deg);
+    margin-left: 100px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .body {
+    width: 200px;
+    height: 300px;
+    background-color: #fd7b71;
+    border-radius: 50px;
+    border-top-left-radius: 55px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    border: 5px solid #ff8f7b;
+    z-index: 2;
+    -webkit-box-shadow: -17px 0px 0px -3px #ff6374, -18px 0px 0px -3px #ff8f7b;
+            box-shadow: -17px 0px 0px -3px #ff6374, -18px 0px 0px -3px #ff8f7b;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .wood {
+    width: 60px;
+    height: 120px;
+    background-color: #cc8031;
+    position: absolute;
+    bottom: -120px;
+    left: 90px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 50px;
+    z-index: 1;
+    border: 2px solid #f19157;
+    -webkit-box-shadow: -4px -3px 0px 3px #bd722b, -5px -3px 0px 3px #bd722b;
+            box-shadow: -4px -3px 0px 3px #bd722b, -5px -3px 0px 3px #bd722b;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .aiscreem:hover {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .aiscreem:hover .body,
+  .aiscreem:hover .wood {
+    -webkit-box-shadow: 0px 0px 0px 0px #bd722b, 0px 0px 0px 0px #bd722b;
+            box-shadow: 0px 0px 0px 0px #bd722b, 0px 0px 0px 0px #bd722b;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .aiscreem:hover .wood {
+    left: 95px;
+  }
+  
+  #mouth-container {
+    width: 200px;
+    height: 35px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  #mouth {
+    width: 70px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  #eye-container {
+    width: 200px;
+    height: 200px;
+    background-color: #fd7b71;
+    border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .eye {
+    width: 20px;
+    height: 10px;
+    margin-bottom: -40px;
+    background-color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  #left-eye {
+    left: 45px;
+  }
+  
+  #right-eye {
+    right: 50px;
+  }
+  
+  #range-count {
+    margin-top: 200px;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  input {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 25px;
+    background: #e0451e;
+    background: -webkit-gradient(linear, left top, right top, color-stop(27%, #e0451e), color-stop(100%, #0009fb), to(#0023ff));
+    background: linear-gradient(90deg, #e0451e 27%, #0009fb 100%, #0023ff 100%);
+    outline: none;
+    border-radius: 20px;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  input:hover {
+    opacity: 1;
+  }
+  
+  input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 50px;
+    background: red;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: red;
+    cursor: pointer;
+  }
+  
+  #freez {
+    font-size: 50px;
+    color: white;
+  }
+  /*# sourceMappingURL=style.css.map */
